@@ -1,5 +1,7 @@
 
-# Dictionary
+#  DICTIONARY
+
+Dictionary is the author implementation of the [Dictionary challenge](https://www.frontendmentor.io/challenges/dictionary-web-app-h5wwnyuKFL) of [frontenmentor.com](https://www.frontendmentor.io)
 
 ## Requirements
 
@@ -15,9 +17,10 @@
 - Use JavaScript events.
 - Communicate technical concepts to other technical people.
 
-  #  DICTIONARY
-
-Dictionary is the author implementation of the [Dictionary challenge](https://www.frontendmentor.io/challenges/dictionary-web-app-h5wwnyuKFL) of [frontenmentor.com](https://www.frontendmentor.io)
+## Tasks to do
+   * ### Styling
+   * ### deploying on github page
+   * ### Updating documentation
 
 ## Desktop version
 
