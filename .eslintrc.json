@@ -16,7 +16,9 @@
     "eol-last": "off",
     "import/extensions": [ 1, {
       "js": "always", "json": "always"
-    }]
+    }],
+    "no-restricted-syntax": ["error", "ForInStatement", "LabeledStatement", "WithStatement"],
+    "no-unused-vars": "off"
   },
   "ignorePatterns": [
     "dist/",
