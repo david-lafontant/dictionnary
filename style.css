@@ -1,14 +1,14 @@
 
-.myInput{
+.myInput {
   padding: 1rem;
   border: 2px solid #ccc;
   border-radius: 10px;
-  background-color:aqua;
+  background-color: aqua;
   color: black;
 }
 
-.myInput:focus{
-  background-color:#e2f608;
+.myInput:focus {
+  background-color: #e2f608;
   border: 2px solid #2904f7;
   font-size: large;
 }
