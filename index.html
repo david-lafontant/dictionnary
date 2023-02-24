@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dictionary</title>
+  <link rel="stylesheet" href="./src/assets/bootstrap/css/bootstrap.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <div>
+  <main class="container border">
     <h1>Dictionary</h1>
 
-        <label for="nom">Search</label>
-        <input class="myInput" type="text" id="inputBox" name="nom" required placeholder="Enter searched word" onkeypress="getWord(event)" />
+    <label for="nom">Search</label>
+    <input class="myInput" type="text" id="inputBox" name="nom" required placeholder="Enter searched word"
+      onkeypress="getWord(event)" />
     <h2 id="msg1"></h2>
     <div id="definition"></div>
 
-    </div>
+  </main>
+  <script src="./src/assets/jquery-3.6.3.min.js"></script>
+  <script src="./src/assets/popper.min.js"></script>
+  <script src="./src/assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="index.js"></script>
 </body>
+
 </html>
