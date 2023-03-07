@@ -1,19 +1,20 @@
-body{
+/* body{
 
-}
+} */
 .myInput {
   padding: 1rem;
-  border: 2px solid #ccc;
   border-radius: 10px;
-  background-color: aqua;
+  background-color: #f4f4f4;
   color: black;
-  background-image: url(./src//assets/images/magnificationlens.svg);
+  background-image: url(./src//assets/images/lens.svg);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position-x: 99%;
+  background-position-y: 50%;
+  border: 0;
 }
 .myInput:focus {
-  background: #e2f608;
-  border: 2px solid #2904f7;
+  background-color: #f4f4f4;
+  outline: none;
   font-size: large;
 }
 
