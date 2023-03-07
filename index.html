@@ -48,21 +48,25 @@
         </section>
       </div>
     </header>
-    <main class="container border">
+    <main class="container border-0">
+      <section class="row">
+        <div class="col">
+          <label class="d-none" for="nom">Search</label>
+          <input
+            class="myInput mt-2 w-100"
+            type="text"
+            id="inputBox"
+            name="nom"
+            required
+            placeholder="Enter searched word"
+            onkeypress="getWord(event)"
+          />
+        </div>
+      </section>
 
 
-      <h1>Dictionary</h1>
 
-      <label for="nom">Search</label>
-      <input
-        class="myInput"
-        type="text"
-        id="inputBox"
-        name="nom"
-        required
-        placeholder="Enter searched word"
-        onkeypress="getWord(event)"
-      />
+
       <h2 id="msg1"></h2>
       <div id="definition"></div>
     </main>
