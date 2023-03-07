@@ -1,14 +1,18 @@
+body{
 
+}
 .myInput {
   padding: 1rem;
   border: 2px solid #ccc;
   border-radius: 10px;
   background-color: aqua;
   color: black;
+  background-image: url(./src//assets/images/magnificationlens.svg);
+  background-repeat: no-repeat;
+  background-position: right;
 }
-
 .myInput:focus {
-  background-color: #e2f608;
+  background: #e2f608;
   border: 2px solid #2904f7;
   font-size: large;
 }
@@ -71,4 +75,8 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.purple{
+  color: purple;
 }
