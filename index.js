@@ -1,5 +1,5 @@
 function display(result) {
-  let signification = '';
+  let signification = "";
   const { word } = result[0];
   const { phonetic } = result[0];
   const source = result[0].sourceUrls;
@@ -9,12 +9,26 @@ function display(result) {
   const wordsMeanings = [];
   const synonyms = [];
 
-  signification += `<h1>${word}</h1>`;
-  signification += `<p>${phonetic}</p>`;
-  signification += ` <audio controls >
-   <source src="${mp3}" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>`;
+  //   signification += `<h1>${word}</h1>`;
+  //   signification += `<p>${phonetic}</p>`;
+  //   signification += ` <audio controls >
+  //    <source src="${mp3}" type="audio/mpeg">
+  //   Your browser does not support the audio element.
+  // </audio>`;
+
+  signification += `<div class="d-flex flex-row justify-content-between align-items-center">
+  <div>
+    <h1>${word}</h1>
+    <p>${phonetic}</p>
+  </div>
+  <div>
+    <audio controls >
+      <source src="${mp3}" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</div>
+`;
 
   for (const item of meanings) {
     partOfSpeech.push(item.partOfSpeech);
@@ -23,32 +37,39 @@ function display(result) {
   }
 
   for (let item = 0; item < partOfSpeech.length; item += 1) {
-    signification += ` <h2><i>${partOfSpeech[item]}</i></h2>`;
+    signification += `<h2><i>${partOfSpeech[item]}</i></h2>`;
+    signification += `<p>Meaning</p><ul>`;
     for (const element of wordsMeanings[item]) {
-      signification += `<p>${element.definition}</p>`;
+      signification += `<li>
+      <p>
+      ${element.definition}
+      </p>
+      <p>${element.example ? element.example : ""}</p>
+      </li>`;
     }
+    signification += `</ul>`;
     if (item < synonyms.length && synonyms[item].length !== 0) {
       signification += `<p>Synonym: ${synonyms[item]}</p>`;
     }
   }
   signification += `<p>${source}</p>`;
-  document.getElementById('definition').innerHTML = signification;
+  document.getElementById("definition").innerHTML = signification;
 }
 
 async function getWord(e) {
-  const texte = document.getElementById('inputBox');
+  const texte = document.getElementById("inputBox");
   const key = e.keyCode || e.which;
   if (key === 13) {
     const response = await fetch(
-      `https://api.dictionaryapi.dev/api/v2/entries/en/${texte.value}`,
+      `https://api.dictionaryapi.dev/api/v2/entries/en/${texte.value}`
     );
     if (!response.ok) {
       const message = `An error has occured: ${response.message}`;
-      document.getElementById('definition').innerHTML = message;
+      document.getElementById("definition").innerHTML = message;
       throw new Error(message);
     }
     const result = await response.json();
     display(result);
-    texte.value = '';
+    texte.value = "";
   }
 }
