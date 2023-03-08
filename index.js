@@ -18,19 +18,38 @@ function display(result) {
   //   Your browser does not support the audio element.
   // </audio>`;
 
-  signification += `<div class="d-flex flex-row justify-content-between align-items-center">
-  <div>
-    <h1>${word}</h1>
-    <p class="purple">${phonetic}</p>
-  </div>
-  <div>
-    <audio controls >
-      <source src="${mp3}" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
-  </div>
+//   signification += `<div class="d-flex flex-row justify-content-between align-items-center">
+//   <div>
+//     <h1>${word}</h1>
+//     <p class="purple">${phonetic}</p>
+//   </div>
+//   <div>
+//     <audio controls >
+//       <source src="${mp3}" type="audio/mpeg">
+//       Your browser does not support the audio element.
+//     </audio>
+//   </div>
+// </div>
+// `;
+
+
+signification += `<div class="d-flex flex-row justify-content-between align-items-center">
+<div>
+  <h1>${word}</h1>
+  <p class="purple">${phonetic}</p>
+</div>
+<div>
+<audio id="player" src="${mp3}" ></audio>
+<div>
+    <button id="playbutton" onclick="document.getElementById('player').play()"></button>
+    </div>
+</div>
 </div>
 `;
+
+
+
+
 
   for (const item of meanings) {
     partOfSpeech.push(item.partOfSpeech);
