@@ -1,6 +1,11 @@
 /* body{
 
 } */
+
+:root{
+  --gray-color: #5a5656;
+  --purple-color: #be1399;
+}
 .myInput {
   padding: 1rem;
   border-radius: 10px;
@@ -16,6 +21,30 @@
   background-color: #f4f4f4;
   outline: none;
   font-size: large;
+}
+
+.gray{color: var(--gray-color);} 
+
+.purple{
+  color: var(--purple-color);
+}
+
+#playbutton{
+  height: 50px;
+  width: 50px;background-color: transparent;
+  background-image: url(./src//assets/images/play-button_icon.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+}
+
+#playbutton:focus {
+  border: none;
+  outline: none;
+}
+
+.uderline{
+  text-decoration: underline;
 }
 
 .switch {
@@ -56,11 +85,11 @@
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: var(--purple-color);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px var(--purple-color);
 }
 
 input:checked + .slider:before {
@@ -81,3 +110,22 @@ input:checked + .slider:before {
 .purple{
   color: purple;
 }
+
+.results li{
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+.results li::before{
+  content: "\2022";
+  color: var(--purple-color);
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1.5rem;
+  line-height: 0;
+  margin: 0 1em 0 -1em;
+  position: absolute;
+  top: 9px;
+}
+
