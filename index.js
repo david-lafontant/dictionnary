@@ -3,11 +3,13 @@ function display(result) {
   const { word } = result[0];
   const { phonetic } = result[0];
   const source = result[0].sourceUrls;
-  const mp3 = result[0].phonetics[0].audio;
+  const mp3 = result[0].phonetics[result[0].phonetics.length-1]["audio"];
   const { meanings } = result[0];
   const partOfSpeech = [];
   const wordsMeanings = [];
   const synonyms = [];
+  // console.log(result[0].phonetics.length);
+  // console.log(result[0].phonetics[result[0].phonetics.length-1]["audio"]);
 
   //   signification += `<h1>${word}</h1>`;
   //   signification += `<p>${phonetic}</p>`;
@@ -19,7 +21,7 @@ function display(result) {
   signification += `<div class="d-flex flex-row justify-content-between align-items-center">
   <div>
     <h1>${word}</h1>
-    <p>${phonetic}</p>
+    <p class="purple">${phonetic}</p>
   </div>
   <div>
     <audio controls >
@@ -38,7 +40,7 @@ function display(result) {
 
   for (let item = 0; item < partOfSpeech.length; item += 1) {
     signification += `<h2><i>${partOfSpeech[item]}</i></h2>`;
-    signification += `<p>Meaning</p><ul>`;
+    signification += `<p class="gray"><i>Meaning</i></p><ul class="results">`;
     for (const element of wordsMeanings[item]) {
       signification += `<li>
       <p>
@@ -49,10 +51,10 @@ function display(result) {
     }
     signification += `</ul>`;
     if (item < synonyms.length && synonyms[item].length !== 0) {
-      signification += `<p>Synonym: ${synonyms[item]}</p>`;
+      signification += `<p><span class="gray">Synonym<span>&emsp; <span class="purple">${synonyms[item]}</span></p>`;
     }
   }
-  signification += `<p>${source}</p>`;
+  signification += `<p><span class="gray">Source</span>&emsp;<span class="uderline">${source}</span></p>`;
   document.getElementById("definition").innerHTML = signification;
 }
 
