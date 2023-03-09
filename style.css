@@ -2,10 +2,11 @@
 
 } */
 
-:root{
+:root {
   --gray-color: #5a5656;
   --purple-color: #be1399;
 }
+
 .myInput {
   padding: 1rem;
   border-radius: 10px;
@@ -17,21 +18,23 @@
   background-position-y: 50%;
   border: 0;
 }
+
 .myInput:focus {
   background-color: #f4f4f4;
   outline: none;
   font-size: large;
 }
 
-.gray{color: var(--gray-color);} 
+.gray { color: var(--gray-color); }
 
-.purple{
+.purple {
   color: var(--purple-color);
 }
 
-#playbutton{
+#playbutton {
   height: 50px;
-  width: 50px;background-color: transparent;
+  width: 50px;
+  background-color: transparent;
   background-image: url(./src//assets/images/play-button_icon.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,7 +46,7 @@
   outline: none;
 }
 
-.uderline{
+.uderline {
   text-decoration: underline;
 }
 
@@ -68,11 +71,11 @@
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
-.slider:before {
+.slider::before {
   position: absolute;
   content: "";
   height: 26px;
@@ -80,8 +83,8 @@
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
@@ -92,7 +95,7 @@ input:focus + .slider {
   box-shadow: 0 0 1px var(--purple-color);
 }
 
-input:checked + .slider:before {
+input:checked + .slider::before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
@@ -103,29 +106,23 @@ input:checked + .slider:before {
   border-radius: 34px;
 }
 
-.slider.round:before {
+.slider.round::before {
   border-radius: 50%;
 }
 
-.purple{
-  color: purple;
-}
-
-.results li{
+.results li {
   padding: 0;
   list-style: none;
   position: relative;
 }
 
-.results li::before{
+.results li::before {
   content: "\2022";
   color: var(--purple-color);
   display: inline-block;
   width: 1rem;
-  margin-left: -1.5rem;
   line-height: 0;
-  margin: 0 1em 0 -1em;
+  margin: 0 1em 0 -1.5em;
   position: absolute;
   top: 9px;
 }
-
