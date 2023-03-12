@@ -66,3 +66,21 @@ async function getWord(e) {
     texte.value = '';
   }
 }
+
+const choice = document.getElementById('fontChoice');
+choice.addEventListener(
+  'change',
+  (e) => {
+    e.preventDefault();
+    if (e.target.value === 'serif') {
+      document.body.style.fontFamily = 'serif';
+    }
+    if (e.target.value === 'sans-serif') {
+      document.body.style.fontFamily = 'sans-serif';
+    }
+    if (e.target.value === 'monospace') {
+      document.body.style.fontFamily = 'monospace';
+    }
+  },
+  false,
+);
