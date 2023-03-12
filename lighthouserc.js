@@ -1,10 +1,13 @@
 module.exports = {
   ci: {
     collect: {
-      settings: { chromeFlags: '--no-sandbox  --headless --disable-gpu' },
+      settings: {
+        hostname: "127.0.0.1",
+        chromeFlags: "--no-sandbox  --headless --disable-gpu",
+      },
     },
     upload: {
-      target: 'temporary-public-storage',
+      target: "temporary-public-storage",
     },
   },
 };
