@@ -19,6 +19,12 @@ Dictionary is the author implementation of the [Dictionary challenge](https://ww
 
 ## Tasks to do
    * ### Styling
+     - #### Desktop
+      ![model](model.webp)
+     - #### Tablet
+      ![model](model-tablet.webp)
+     - #### Mobile
+   -  ![model](model-mobile.webp)
    * ### deploying on github page
    * ### Updating documentation
 
@@ -108,3 +114,7 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](LICENCE.md) licensed.
+
+
+
+https://deeditor.com/ for colorizing svg
