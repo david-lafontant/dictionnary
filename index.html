@@ -18,7 +18,7 @@
           <img src="./src/assets/images/closed-book.svg" alt="dictionary icon" width="32px" height="32px" alt="Dictionary logo" />
           <ul class="list-group list-group-horizontal align-items-center">
             <li class="list-group-item border-0">
-              <select name="choice">
+              <select name="choice" id="fontChoice">
                 <option value="serif">Serif</option>
                 <option value="sans-serif" selected>Sans-serif</option>
                 <option value="monospace">Monospace</option>
@@ -39,6 +39,7 @@
   <main class="container border-0">
     <section class="row">
       <div class="col">
+        <h1>Hello</h1>
         <label class="d-none" for="nom">Search</label>
         <input class="myInput mt-2 w-100" type="text" id="inputBox" name="nom" required
           placeholder="Enter searched word" onkeypress="getWord(event)" />
