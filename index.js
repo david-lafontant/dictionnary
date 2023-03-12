@@ -1,5 +1,5 @@
 function display(result) {
-  let signification = "";
+  let signification = '';
   const { word } = result[0];
   const { phonetic } = result[0];
   const source = result[0].sourceUrls;
@@ -37,50 +37,50 @@ function display(result) {
       <p>
       ${element.definition}
       </p>
-      <p>${element.example ? element.example : ""}</p>
+      <p>${element.example ? element.example : ''}</p>
       </li>`;
     }
-    signification += "</ul>";
+    signification += '</ul>';
     if (item < synonyms.length && synonyms[item].length !== 0) {
       signification += `<p><span class="gray">Synonym<span>&emsp; <span class="purple">${synonyms[item]}</span></p>`;
     }
   }
   signification += `<p><span class="gray">Source</span>&emsp;<span class="uderline">${source}</span></p>`;
-  document.getElementById("definition").innerHTML = signification;
+  document.getElementById('definition').innerHTML = signification;
 }
 
 async function getWord(e) {
-  const texte = document.getElementById("inputBox");
+  const texte = document.getElementById('inputBox');
   const key = e.keyCode || e.which;
   if (key === 13) {
     const response = await fetch(
-      `https://api.dictionaryapi.dev/api/v2/entries/en/${texte.value}`
+      `https://api.dictionaryapi.dev/api/v2/entries/en/${texte.value}`,
     );
     if (!response.ok) {
       const message = `An error has occured: ${response.message}`;
-      document.getElementById("definition").innerHTML = message;
+      document.getElementById('definition').innerHTML = message;
       throw new Error(message);
     }
     const result = await response.json();
     display(result);
-    texte.value = "";
+    texte.value = '';
   }
 }
 
-const choice = document.getElementById("fontChoice");
+const choice = document.getElementById('fontChoice');
 choice.addEventListener(
-  "change",
-  function (e) {
+  'change',
+  (e) => {
     e.preventDefault();
-    if (e.target.value === "serif") {
-      document.body.style.fontFamily = "serif";
+    if (e.target.value === 'serif') {
+      document.body.style.fontFamily = 'serif';
     }
-    if (e.target.value === "sans-serif") {
-      document.body.style.fontFamily = "sans-serif";
+    if (e.target.value === 'sans-serif') {
+      document.body.style.fontFamily = 'sans-serif';
     }
-    if (e.target.value === "monospace") {
-      document.body.style.fontFamily = "monospace";
+    if (e.target.value === 'monospace') {
+      document.body.style.fontFamily = 'monospace';
     }
   },
-  false
+  false,
 );
