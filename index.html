@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dictionary</title>
-  <link rel="stylesheet" href="src/bootstrap2/bootstrap.min.css" >
+  <link id="theme-style" rel="stylesheet" href="src/bootstrap2/bootstrap.min.css">
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -15,7 +15,8 @@
     <div class="container">
       <section class="row">
         <div class="col d-flex flex-row justify-content-between align-items-center">
-          <img src="./src/assets/images/closed-book.svg" alt="dictionary icon" width="32px" height="32px" alt="Dictionary logo" />
+          <img src="./src/assets/images/closed-book.svg" alt="dictionary icon" width="32px" height="32px"
+            alt="Dictionary logo" />
           <ul class="list-group list-group-horizontal align-items-center">
             <li class="list-group-item border-0">
               <select name="choice" id="fontChoice">
@@ -26,10 +27,10 @@
             </li>
             <li class="list-group-item border-0">
               <label class="switch" for="mode">
-                <input type="checkbox" id="mode"/>
+                <input type="checkbox" id="mode" />
                 <span class="slider round"></span>
               </label>
-              <img src="./src/assets/images/halfmoon.svg" width="32px" height="32px" alt="dark - light mode icon"/>
+              <img src="./src/assets/images/halfmoon.svg" width="32px" height="32px" alt="dark - light mode icon" />
             </li>
           </ul>
         </div>
@@ -39,7 +40,6 @@
   <main class="container border-0">
     <section class="row">
       <div class="col">
-        <h1>Hello</h1>
         <label class="d-none" for="nom">Search</label>
         <input class="myInput mt-2 w-100" type="text" id="inputBox" name="nom" required
           placeholder="Enter searched word" onkeypress="getWord(event)" />
