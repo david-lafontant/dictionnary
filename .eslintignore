@@ -1,3 +1,5 @@
 src/assets/bootstrap/*
 src/assets/jquery-3.6.3.min.js
 src/assets/popper.min.js
+src/bootstrap2/bootstrap.min.js
+src/bootstrap2/bootstrap.bundle.min.js
