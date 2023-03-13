@@ -127,7 +127,6 @@ input:checked + .slider::before {
   top: 9px;
 }
 
-
 #spinner:not([hidden]) {
   position: fixed;
   top: 0;
@@ -147,13 +146,14 @@ input:checked + .slider::before {
   border-top: 25px solid #5509a6;
   border-radius: 100%;
   will-change: transform;
-  animation: spin 1s infinite linear
+  animation: spin 1s infinite linear;
 }
 
 @keyframes spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
