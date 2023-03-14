@@ -1,5 +1,5 @@
 
-#  DICTIONARY
+# DICTIONARY
 
 Dictionary is the author implementation of the [Dictionary challenge](https://www.frontendmentor.io/challenges/dictionary-web-app-h5wwnyuKFL) of [frontenmentor.com](https://www.frontendmentor.io)
 
@@ -18,33 +18,33 @@ Dictionary is the author implementation of the [Dictionary challenge](https://ww
 - Communicate technical concepts to other technical people.
 
 ## Tasks to do
-   * ### Styling
-     - #### Desktop
-      ![model](model.webp)
-     - #### Tablet
-      ![model](model-tablet.webp)
-     - #### Mobile
-   -  ![model](model-mobile.webp)
-   * ### deploying on github page
-   * ### Updating documentation
 
-## Desktop version
+- ### Styling
+  - #### Desktop
+
+      ![model](src/assets/images/readme-assets/model.webp)
+  - #### Tablet
+
+      ![model](src/assets/images/readme-assets/model-tablet.webp)
+  - #### Mobile
+
+- ![model](src/assets/images/readme-assets/model-mobile.webp)
+
+- ### Refactoring
 
 ## Live Demo
-[live demo](http://davidlafontant.tech/dictionnary/)
+
+[Live demo](http://davidlafontant.tech/dictionnary/)
 
 ## Built With
 
 - HTML, CSS, JavaScript, GIT, & SASS.
-- - Technologies used: GitHub, VScode, Windows 11 .
+  - - Technologies used: GitHub, VScode, Windows 11 .
 -
-
-
 
 ## Video Preview
 
-
-
+![Video](src\assets\images\readme-assets\dictionary_live.gif)
 
 ## Getting Started
 
@@ -54,13 +54,7 @@ To get a local copy up and running follow these simple example steps.
 
 - A device that support running browser applications.
 - access to internet connection.
-
-
-### Setup
-
-<!-- #### View pages from the browser
-
-- If you just want to check the webpage/webapp, you have it available on the live demo link. -->
+- An ide (like VSCode or Atom)
 
 #### Install locally the code of the application
 
@@ -69,9 +63,9 @@ In order to install a local version of this project and please do the following 
 - Install the latest version of a Code editor.
 - install the latest version of GIT.
 - Go to the repository [Repository](https://github.com/david-lafontant/dictionnary.git)
-- Clone the repository
-- Play with the code and enjoy :confetti_ball:
-
+- Clone the repository with `git clone https://github.com/david-lafontant/dictionnary.git`
+- then `cd dictionnary`
+- Use your favorite code editor or IDE and Play with the code and enjoy :confetti_ball:
 
 ## Author
 
@@ -79,7 +73,7 @@ In order to install a local version of this project and please do the following 
 
 - GitHub: [@githubhandle](https://github.com/david-lafontant)
 - Twitter: [@twitterhandle](https://twitter.com/manikatex)
-
+- Linkedin: [@linkedinhandle](src\assets\images\readme-assets\model.webp)
 
 ## 🤝 Contributing
 
@@ -92,20 +86,11 @@ Feel free to check the [issues page](../../issues/).
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-<!--
-👤 **Cindy Shin**
-
-- [Template](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) -->
 
 ## Other Resources
 
-- Font Squirrel [Font Squirrel](https://www.fontsquirrel.com/tools/webfont-generator)
-- Font Awesome [Font Awesome](https://fontawesome.com/)
-- Mobile simulator [Mobile simulator - responsive testing tool](https://chrome.google.com/webstore/detail/mobile-simulator-responsi/ckejmhbmlajgoklhgbapkiccekfoccmk)
 ## 📝 License
 
 This project is [MIT](LICENCE.md) licensed.
 
-
-
-https://deeditor.com/ for colorizing svg
+<!-- https://deeditor.com/ for colorizing svg -->
