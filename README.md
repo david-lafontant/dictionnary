@@ -23,12 +23,11 @@ Dictionary is the author implementation of the [Dictionary challenge](https://ww
 
 - #### Desktop
 
-      ![model](src/assets/images/readme-assets/model.webp)
+![desktop](src/assets/images/readme-assets/model.webp)
 
 - #### Tablet
 
-      ![model](src/assets/images/readme-assets/model-tablet.webp)
-
+![tablet](src/assets/images/readme-assets/model-tablet.webp)
 - #### Mobile
 
 - ![model](src/assets/images/readme-assets/model-mobile.webp)
