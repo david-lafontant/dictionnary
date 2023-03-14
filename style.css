@@ -176,3 +176,10 @@ input:checked + .slider::before {
   border-top: 1px solid #ccc;
 }
 
+select:focus {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+
