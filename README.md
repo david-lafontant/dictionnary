@@ -20,13 +20,16 @@ Dictionary is the author implementation of the [Dictionary challenge](https://ww
 ## Tasks to do
 
 - ### Styling
-  - #### Desktop
+
+- #### Desktop
 
       ![model](src/assets/images/readme-assets/model.webp)
-  - #### Tablet
+
+- #### Tablet
 
       ![model](src/assets/images/readme-assets/model-tablet.webp)
-  - #### Mobile
+
+- #### Mobile
 
 - ![model](src/assets/images/readme-assets/model-mobile.webp)
 
@@ -39,12 +42,11 @@ Dictionary is the author implementation of the [Dictionary challenge](https://ww
 ## Built With
 
 - HTML, CSS, JavaScript, GIT, & SASS.
-  - - Technologies used: GitHub, VScode, Windows 11 .
--
+- Technologies used: GitHub, VScode, Windows 11 .
 
 ## Video Preview
 
-![](src\assets\images\readme-assets\dictionary_live.gif)
+![Video](src/assets/images/readme-assets/dictionary_live.gif)
 
 ## Getting Started
 
