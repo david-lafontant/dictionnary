@@ -162,12 +162,14 @@ input:checked + .slider::before {
   overflow: hidden;
   display: block;
 }
+
 .line span {
   vertical-align: baseline;
   display: block;
   position: relative;
 }
-.line span:after {
+
+.line span::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -182,8 +184,8 @@ select:focus {
   box-shadow: none !important;
 }
 
-#select-font{
-  border-right: 1px solid #000 !important ;
+#select-font {
+  border-right: 1px solid #000 !important;
   border-left: 0 !important;
   border-top: 0 !important;
   border-bottom: 0 !important;
