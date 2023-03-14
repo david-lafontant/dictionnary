@@ -182,4 +182,9 @@ select:focus {
   box-shadow: none !important;
 }
 
-
+#select-font{
+  border-right: 1px solid #000 !important ;
+  border-left: 0 !important;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+}
