@@ -30,7 +30,7 @@ function display(result) {
   }
 
   for (let item = 0; item < partOfSpeech.length; item += 1) {
-    signification += `<h2><i>${partOfSpeech[item]}</i></h2>`;
+    signification += `<h2 class='line'><span><i>${partOfSpeech[item]}</i></span></h2>`;
     signification += '<p class="gray"><i>Meaning</i></p><ul class="results">';
     for (const element of wordsMeanings[item]) {
       signification += `<li>
