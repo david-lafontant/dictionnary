@@ -156,3 +156,23 @@ input:checked + .slider::before {
     transform: rotate(360deg);
   }
 }
+
+.line {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+.line span {
+  vertical-align: baseline;
+  display: block;
+  position: relative;
+}
+.line span:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  margin-left: 10px;
+  border-top: 1px solid #ccc;
+}
+
