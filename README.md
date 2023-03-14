@@ -9,13 +9,12 @@ Dictionary is the author implementation of the [Dictionary challenge](https://ww
 - Apply best practices in HTML code.
 - Use CSS selectors correctly.
 - Use CSS box model.
-- Use Flexbox to place elements in the page.
 - Demonstrate ability to create UIs adaptable to different screen sizes using media queries.
 - Use GitHub Pages to deploy web pages.
 - Apply JavaScript best practices and language style guides in code.
 - Use JavaScript to manipulate DOM elements.
 - Use JavaScript events.
-- Communicate technical concepts to other technical people.
+
 
 ## Tasks to do
 
