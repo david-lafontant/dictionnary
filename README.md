@@ -44,7 +44,7 @@ Dictionary is the author implementation of the [Dictionary challenge](https://ww
 
 ## Video Preview
 
-![Video](src\assets\images\readme-assets\dictionary_live.gif)
+![](src\assets\images\readme-assets\dictionary_live.gif)
 
 ## Getting Started
 
