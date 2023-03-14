@@ -45,14 +45,12 @@ Deployed soon
 -
 
 ## Live Demo
-Deployed soon
-<!-- [Live Demo Link](https://david-lafontant.github.io/capstone1/index.html) -->
-
+[live demo](http://davidlafontant.tech/dictionnary/)
 
 ## Video Preview
 
 Deployed soon
-<!-- Video [Video](https://www.loom.com/share/9ad870ae58c843d9b355f8f282e2e3b3) -->
+[live demo](http://davidlafontant.tech/dictionnary/)
 
 
 ## Getting Started
