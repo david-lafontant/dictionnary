@@ -30,13 +30,8 @@ Dictionary is the author implementation of the [Dictionary challenge](https://ww
 
 ## Desktop version
 
-Deployed soon
-<!-- ![Desktop screenshot](assets/images/desktop_screenshot.png) -->
-
-
-## Mobile version
-Deployed soon
-<!-- ![Mobile screenshot](/assets/images/mobile_screenshot.png) -->
+## Live Demo
+[live demo](http://davidlafontant.tech/dictionnary/)
 
 ## Built With
 
@@ -44,13 +39,11 @@ Deployed soon
 - - Technologies used: GitHub, VScode, Windows 11 .
 -
 
-## Live Demo
-[live demo](http://davidlafontant.tech/dictionnary/)
+
 
 ## Video Preview
 
-Deployed soon
-[live demo](http://davidlafontant.tech/dictionnary/)
+
 
 
 ## Getting Started
