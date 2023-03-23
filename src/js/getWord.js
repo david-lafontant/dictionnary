@@ -9,7 +9,7 @@ async function getWord(e) {
     `https://api.dictionaryapi.dev/api/v2/entries/en/${texte.value}`,
   );
   if (!response.ok) {
-    handleErrors();
+    handleErrors(spinner, response);
   }
   const result = await response.json();
   display(result);
