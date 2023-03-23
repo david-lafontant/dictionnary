@@ -8,6 +8,11 @@ function display(result) {
   const partOfSpeech = [];
   const wordsMeanings = [];
   const synonyms = [];
+  for (const item of meanings) {
+    partOfSpeech.push(item.partOfSpeech);
+    wordsMeanings.push(item.definitions);
+    synonyms.push(item.synonyms);
+  }
 
   signification += `<div class="d-flex flex-row justify-content-between align-items-center">
 <div>
@@ -22,12 +27,6 @@ function display(result) {
 </div>
 </div>
 `;
-
-  for (const item of meanings) {
-    partOfSpeech.push(item.partOfSpeech);
-    wordsMeanings.push(item.definitions);
-    synonyms.push(item.synonyms);
-  }
 
   for (let item = 0; item < partOfSpeech.length; item += 1) {
     signification += `<h2 class='line'><span><i>${partOfSpeech[item]}</i></span></h2>`;
@@ -46,6 +45,7 @@ function display(result) {
     }
   }
   signification += `<p><span class="gray">Source</span>&emsp;<span class="uderline">${source}</span></p>`;
+
   document.getElementById("definition").innerHTML = signification;
 }
 
