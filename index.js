@@ -13,15 +13,7 @@ choice.addEventListener(
   "change",
   (e) => {
     e.preventDefault();
-    if (e.target.value === "serif") {
-      document.body.style.fontFamily = "serif";
-    }
-    if (e.target.value === "sans-serif") {
-      document.body.style.fontFamily = "sans-serif";
-    }
-    if (e.target.value === "monospace") {
-      document.body.style.fontFamily = "monospace";
-    }
+    toggleFont(e);
   },
   false
 );
