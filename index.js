@@ -1,3 +1,7 @@
+import getWord from "./src/js/getWord.js";
+import toggleFont from "./src/js/toggleFont.js";
+import toggleTheme from "./src/js/toggleTheme.js";
+
 // getWord is a function that fetch the meaning of a word from DIctionary Api
 const inputBox = document.getElementById("inputBox");
 inputBox.addEventListener("keypress", (e) => {
@@ -19,4 +23,4 @@ choice.addEventListener(
 );
 
 // Change document theme : dark light
-document.getElementById("mode").addEventListener("change", toogleTheme());
+document.getElementById("mode").addEventListener("change", toggleTheme());
