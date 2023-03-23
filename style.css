@@ -1,6 +1,6 @@
 :root {
   --gray-color: #5a5656;
-  --purple-color: #be1399;
+  --purple-color: #87066b;
 }
 
 .myInput {
@@ -164,7 +164,7 @@ input:checked + .slider::before {
 }
 
 .line span {
-  vertical-align: baseline;
+  /* vertical-align: baseline; */
   display: block;
   position: relative;
 }
@@ -176,6 +176,12 @@ input:checked + .slider::before {
   top: 50%;
   margin-left: 10px;
   border-top: 1px solid #ccc;
+}
+
+select{
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 select:focus {
