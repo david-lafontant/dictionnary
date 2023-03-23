@@ -1,5 +1,5 @@
 function display(result) {
-  let signification = "";
+  let signification = '';
   const { word } = result[0];
   const { phonetic } = result[0];
   const source = result[0].sourceUrls;
@@ -36,17 +36,17 @@ function display(result) {
       <p>
       ${element.definition}
       </p>
-      <p>${element.example ? element.example : ""}</p>
+      <p>${element.example ? element.example : ''}</p>
       </li>`;
     }
-    signification += "</ul>";
+    signification += '</ul>';
     if (item < synonyms.length && synonyms[item].length !== 0) {
       signification += `<p><span class="gray">Synonym<span>&emsp; <span class="purple">${synonyms[item]}</span></p>`;
     }
   }
   signification += `<p><span class="gray">Source</span>&emsp;<span class="uderline">${source}</span></p>`;
 
-  document.getElementById("definition").innerHTML = signification;
+  document.getElementById('definition').innerHTML = signification;
 }
 
 export default display;

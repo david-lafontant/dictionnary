@@ -1,7 +1,7 @@
 function handleErrors() {
-  spinner.setAttribute("hidden", "");
+  spinner.setAttribute('hidden', '');
   const message = `An error has occured: ${response.message}`;
-  document.getElementById("definition").innerHTML = message;
+  document.getElementById('definition').innerHTML = message;
   throw new Error(message);
 }
 
