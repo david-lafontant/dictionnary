@@ -23,4 +23,7 @@ choice.addEventListener(
 );
 
 // Change document theme : dark light
-document.getElementById("mode").addEventListener("change", toggleTheme());
+document.getElementById("mode").addEventListener("change", (e) => {
+  e.preventDefault;
+  toggleTheme();
+});
